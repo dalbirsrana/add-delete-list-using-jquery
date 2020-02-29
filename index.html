@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="style.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+
+<!-- PART 1 -->
+	<h1>(New TODO Item)</h1>
+	<div>
+		<!-- segment to collect info from user about TODO item -->
+		<!-- for example :
+			<label for="title" >Title :</label>
+			<input type="text" id="title" name="title" placeholder="please enter title"/>
+		-->
+		<div class="formRow">			
+			<label for="title">Title</label>
+			<input type="text" id="title" placeholder="Please enter title">
+		</div>
+
+
+		<div class="formRow">
+			<label for="date">Due</label>
+			<input type="date" id="date" placeholder="Please enter date">
+		</div>
+		
+		<div class="formRow">
+			<label for="rank">Rank</label>
+			<input type="number" id="rank" placeholder="Enter rank">
+		</div>
+
+		<div class="formRow">
+			<label for="desc">Desc</label>
+			<textarea name="" id="desc" cols="20" rows="6" placeholder="Enter Description"></textarea>
+		</div>
+
+	</div>
+	<!-- add save button here and handle its click in app.js -->
+		<button id="saveList">Save To Todo Array</button>
+
+		<span id="saveListCount"></span>
+
+	<hr />
+
+<!-- PART 2 -->
+	<h1>(TODO List)</h1>
+	<!-- add populate button here and handle its click in app.js -->
+	<button id="polulateList">Polulate Todo List</button>
+
+	<ul id="listContainer">
+		<!-- segment to list all items -->
+
+	</ul>
+	<!-- add clear button here and handle its click in app.js -->	
+	<button id="clearList">Clear Todo List</button>
+
+	<script src="app.js" ></script>
+</body>
+</html>
